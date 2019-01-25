@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_movie"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        tools:src="@drawable/ic_panorama_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_movie"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:text="[MOVIE TITLE]" />
+
+    <TextView
+        android:id="@+id/tv_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/iv_movie"
+        android:layout_below="@id/tv_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        tools:text="[MOVIE OVERVIEW" />
+
+    <TextView
+        android:id="@+id/tv_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_movie"
+        android:layout_below="@+id/tv_overview"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        tools:text="[MOVIE RELEASE DATE]" />
+
+</RelativeLayout>
